@@ -3,7 +3,7 @@
 -- Alternatively, you can combine the 2 Scripts together with a wait block in between to make it
 -- a time buff
 
-function speedUp(part)
+function powerUp(part)
 	local humanoid = part.Parent:FindFirstChild("Humanoid")
 	-- Check if Humanoid exist
 	if humanoid then
@@ -13,4 +13,4 @@ function speedUp(part)
 	end
 end
 
-script.Parent.Touched:Connect(speedUp)
+script.Parent.Touched:Connect(powerUp)
